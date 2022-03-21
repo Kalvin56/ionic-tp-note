@@ -13,5 +13,18 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <h2>Rappels</h2>
+
+  <ion-item>
+    <ion-label>Text</ion-label>
+    <ion-input type="text" [(ngModel)]="body"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-input type="datetime-local" [(ngModel)]="date"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" shape="round" color="primary" fill="outline" (click)="createNotif()">Créer un rappel</ion-button>
+
 </ion-content>
